@@ -20,8 +20,18 @@ function Configurações({ navigation }) {
         <View>
             <Button
             title="Voltar para o início"
-            onPress={ () => navigation.navigate('Configurações')} 
+            onPress={ () => navigation.goBack()} 
             />
         </View>
     );
+}
+
+const Drawer = createDrawerNavigator();
+
+export default function App(){
+    return(
+        <NavigationContainer>
+            <Drawer.
+        </NavigationContainer>
+    )
 }
