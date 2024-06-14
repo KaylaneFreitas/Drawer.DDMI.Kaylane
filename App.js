@@ -31,7 +31,11 @@ const Drawer = createDrawerNavigator();
 export default function App(){
     return(
         <NavigationContainer>
-            <Drawer.
+            <Drawer.Navigator initialRouteName='TelaInicio'>
+                <Drawer.Screen name="TelaInicio" component={TelaInicio}/>
+                <Drawer.Screen name="Configurações" component={Configurações}/>
+            </Drawer.Navigator>
         </NavigationContainer>
-    )
+    );
 }
+
